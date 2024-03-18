@@ -9,7 +9,12 @@ import SwiftUI
 
 struct RegisterView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            Image(.group87)
+                .resizable()
+                .scaledToFill()
+                .frame(width: 277, height: 198)
+        }
     }
 }
 
