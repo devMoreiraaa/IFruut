@@ -104,8 +104,8 @@ struct RegisterView: View {
                 }, label: {
                     Text("Cadastrar ")
                         .frame(width: 299, height: 44)
-                        .foregroundStyle(.white)
                         .bold()
+                        .foregroundStyle(.white)
                         .background(Color.verde)
                         .cornerRadius(12)
                         .padding(.top)

@@ -112,11 +112,11 @@ struct LoginView: View {
                                     RegisterView()
                                 } label: {
                                     Text("Crie uma Conta")
-                                        .frame(width: 220, height: 44)
+                                        .frame(width: 299, height: 44)
                                         .bold()
                                         .foregroundStyle(.white)
                                         .background(Color.verde)
-                                        .cornerRadius(20)
+                                        .cornerRadius(12)
                                         .padding(.top)
                                 }
 
