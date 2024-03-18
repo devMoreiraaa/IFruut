@@ -51,8 +51,13 @@
 		8ECCD9E72BA7D8AD005C857C /* IFruut */ = {
 			isa = PBXGroup;
 			children = (
-				8ECCD9E82BA7D8AD005C857C /* IFruutApp.swift */,
-				8ECCD9EA2BA7D8AD005C857C /* ContentView.swift */,
+				8ECCD9FC2BA7DA8E005C857C /* App */,
+				8ECCD9FB2BA7DA18005C857C /* Core */,
+				8ECCD9FA2BA7DA15005C857C /* Extentions */,
+				8ECCD9F92BA7DA12005C857C /* Service */,
+				8ECCD9F82BA7DA10005C857C /* Models */,
+				8ECCD9F72BA7DA0D005C857C /* Imagem */,
+				8ECCD9F62BA7DA09005C857C /* Fontes */,
 				8ECCD9EC2BA7D8AF005C857C /* Assets.xcassets */,
 				8ECCD9EE2BA7D8AF005C857C /* Preview Content */,
 			);
@@ -65,6 +70,145 @@
 				8ECCD9EF2BA7D8AF005C857C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8ECCD9F62BA7DA09005C857C /* Fontes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fontes;
+			sourceTree = "<group>";
+		};
+		8ECCD9F72BA7DA0D005C857C /* Imagem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Imagem;
+			sourceTree = "<group>";
+		};
+		8ECCD9F82BA7DA10005C857C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8ECCD9F92BA7DA12005C857C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8ECCD9FA2BA7DA15005C857C /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		8ECCD9FB2BA7DA18005C857C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8ECCDA042BA7DAB5005C857C /* Account */,
+				8ECCDA032BA7DAB3005C857C /* TabBar */,
+				8ECCDA022BA7DAB1005C857C /* Home */,
+				8ECCDA012BA7DAAF005C857C /* Menu */,
+				8ECCDA002BA7DAAC005C857C /* Welcome */,
+				8ECCD9FF2BA7DAA4005C857C /* Authentication */,
+				8ECCD9FE2BA7DAA2005C857C /* ViewModel */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8ECCD9FC2BA7DA8E005C857C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8ECCD9E82BA7D8AD005C857C /* IFruutApp.swift */,
+				8ECCD9EA2BA7D8AD005C857C /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8ECCD9FE2BA7DAA2005C857C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8ECCD9FF2BA7DAA4005C857C /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				8ECCDA062BA7DAEF005C857C /* Register */,
+				8ECCDA052BA7DAEA005C857C /* Login */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		8ECCDA002BA7DAAC005C857C /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				8ECCDA082BA7DB02005C857C /* View */,
+				8ECCDA072BA7DAFB005C857C /* Models */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		8ECCDA012BA7DAAF005C857C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		8ECCDA022BA7DAB1005C857C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8ECCDA032BA7DAB3005C857C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		8ECCDA042BA7DAB5005C857C /* Account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		8ECCDA052BA7DAEA005C857C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8ECCDA062BA7DAEF005C857C /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		8ECCDA072BA7DAFB005C857C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8ECCDA082BA7DB02005C857C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
