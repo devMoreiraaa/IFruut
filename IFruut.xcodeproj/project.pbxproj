@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E52F8CF2BA8BA8F00092D93 /* Etapa1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E52F8CE2BA8BA8F00092D93 /* Etapa1View.swift */; };
 		8ECCD9E92BA7D8AD005C857C /* IFruutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCD9E82BA7D8AD005C857C /* IFruutApp.swift */; };
 		8ECCD9EB2BA7D8AD005C857C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCD9EA2BA7D8AD005C857C /* ContentView.swift */; };
 		8ECCD9ED2BA7D8AF005C857C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ECCD9EC2BA7D8AF005C857C /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E52F8CE2BA8BA8F00092D93 /* Etapa1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Etapa1View.swift; sourceTree = "<group>"; };
 		8ECCD9E52BA7D8AD005C857C /* IFruut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IFruut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECCD9E82BA7D8AD005C857C /* IFruutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFruutApp.swift; sourceTree = "<group>"; };
 		8ECCD9EA2BA7D8AD005C857C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		8ECCDA082BA7DB02005C857C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E52F8CE2BA8BA8F00092D93 /* Etapa1View.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				8ECCDA122BA89654005C857C /* RegisterView.swift in Sources */,
 				8ECCD9E92BA7D8AD005C857C /* IFruutApp.swift in Sources */,
 				8ECCDA0F2BA7DE10005C857C /* LoginView.swift in Sources */,
+				8E52F8CF2BA8BA8F00092D93 /* Etapa1View.swift in Sources */,
 				8ECCDA0B2BA7DC59005C857C /* StoryBoardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

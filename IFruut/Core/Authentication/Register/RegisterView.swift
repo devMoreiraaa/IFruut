@@ -102,13 +102,18 @@ struct RegisterView: View {
                 Button(action: {
                     
                 }, label: {
-                    Text("Cadastrar ")
-                        .frame(width: 299, height: 44)
-                        .bold()
-                        .foregroundStyle(.white)
-                        .background(Color.verde)
-                        .cornerRadius(12)
-                        .padding(.top)
+                    NavigationLink {
+                        Etapa1View()
+                    } label: {
+                        Text("Cadastrar ")
+                            .frame(width: 299, height: 44)
+                            .bold()
+                            .foregroundStyle(.white)
+                            .background(Color.verde)
+                            .cornerRadius(12)
+                            .padding(.top)
+                    }
+
                 })
             }
         }
