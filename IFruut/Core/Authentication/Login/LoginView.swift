@@ -25,81 +25,97 @@ struct LoginView: View {
                 .font(.title)
                 .fontWeight(.semibold)
             
+           
+            HStack {
+               
+                
+                Button(action: {
+                    
+                }, label: {
+                    
+                    Image(.color)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 20, height: 20)
+                        .padding(.trailing)
+                    
+                    Text("Entre Com o Facebook")
+                        .foregroundStyle(.black)
+                        .bold()
+                        
+                })
+                .frame(width: 300, height: 54)
+                .background(Color.white)
+                .cornerRadius(12)
+                .bold()
+                .shadow(color: .black.opacity(0.6), radius: 0, x: 0, y: 3)
+            }
             
-            VStack(alignment: .center){
-                HStack{
+            
+            HStack {
+               
+                
+                Button(action: {
+                    
+                }, label: {
                     
                     Image(.color1)
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 24, height: 48)
-                        .padding(.horizontal)
+                        .frame(width: 20, height: 50)
+                        .padding(.trailing)
                     
-                    
-                    Button {
-                        //
-                    } label: {
-                        Text("Entrar com o Google")
-                            .foregroundStyle(.black)
-                            .bold()
-                    }
-                    
-                }
-                .frame(width: 316, height: 54)
+                    Text("Entre Com o Google")
+                        .foregroundStyle(.black)
+                        .bold()
+                        .padding(.trailing)
+                        
+                })
+                .frame(width: 300, height: 54)
                 .background(Color.white)
                 .cornerRadius(12)
-                .shadow(color: .black.opacity(0.6), radius: 2, x: 0, y: 4)
+                .bold()
+                .shadow(color: .black.opacity(0.6), radius: 0, x: 0, y: 3)
+            }
+            
+            
+            
+            
+            
+            HStack {
+               
                 
-                VStack(alignment: .center){
-                    HStack{
-                        
-                        Image(.color)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 20)
-                            .padding(.horizontal)
-                        
-                        
-                        Button {
-                            //
-                        } label: {
-                            Text("Entrar com o Facebook")
-                                .foregroundStyle(.black)
-                                .bold()
-                        }
-                    }
-                    .frame(width: 316, height: 54)
-                    .background(Color.white)
-                    .cornerRadius(12)
-                    .shadow(color: .black.opacity(0.6), radius: 2, x: 0, y: 4)
+                Button(action: {
                     
+                }, label: {
                     
-                    VStack(alignment: .center){
-                        HStack{
-                            
-                                Image(.apple)
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 20, height: 10)
-                                
-                            
-                            
-                            Button {
-                                //
-                            } label: {
-                                Text("Entrar com a Apple")
-                                    .foregroundStyle(.black)
-                                    .bold()
-                            }
-                            
-                            
-                        }
-                        .frame(width: 316, height: 54)
-                        .background(Color.white)
-                        .cornerRadius(12)
-                        .shadow(color: .black.opacity(0.6), radius: 2, x: 0, y: 4)
+                    Image(.apple)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 20, height: 20)
+                        .padding(.trailing)
+                    
+                    Text("Entre Com a Apple")
+                        .foregroundStyle(.black)
+                        .bold()
+                        .padding(.trailing)
                         
+                })
+                .frame(width: 300, height: 54)
+                .background(Color.white)
+                .cornerRadius(12)
+                .bold()
+                .shadow(color: .black.opacity(0.6), radius: 0, x: 0, y: 3)
+            }
+            
+            
+                                    
                         
+            
+            
+            
+            
+            
                         Text("OU")
                             .padding(.top, 30)
                         
@@ -116,13 +132,8 @@ struct LoginView: View {
                                 .padding(.top)
                         })
                     }
-                    
                 }
             }
-            
-        }
-    }
-}
 #Preview {
     LoginView()
 }
