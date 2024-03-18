@@ -29,51 +29,100 @@ struct LoginView: View {
             VStack(alignment: .center){
                 HStack{
                     
-                TextField("Entrar Com o Google", text: $EntrarComOGoogle)
+                    Image(.color1)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 24, height: 48)
+                        .padding(.horizontal)
+                    
+                    
+                    Button {
+                        //
+                    } label: {
+                        Text("Entrar com o Google")
+                            .foregroundStyle(.black)
+                            .bold()
+                    }
+                    
+                }
+                .frame(width: 316, height: 54)
+                .background(Color.white)
+                .cornerRadius(12)
+                .shadow(color: .black.opacity(0.6), radius: 2, x: 0, y: 4)
+                
+                VStack(alignment: .center){
+                    HStack{
+                        
+                        Image(.color)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 20, height: 20)
+                            .padding(.horizontal)
+                        
+                        
+                        Button {
+                            //
+                        } label: {
+                            Text("Entrar com o Facebook")
+                                .foregroundStyle(.black)
+                                .bold()
+                        }
+                    }
+                    .frame(width: 316, height: 54)
+                    .background(Color.white)
+                    .cornerRadius(12)
+                    .shadow(color: .black.opacity(0.6), radius: 2, x: 0, y: 4)
+                    
+                    
+                    VStack(alignment: .center){
+                        HStack{
+                            
+                                Image(.apple)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 20, height: 10)
+                                
+                            
+                            
+                            Button {
+                                //
+                            } label: {
+                                Text("Entrar com a Apple")
+                                    .foregroundStyle(.black)
+                                    .bold()
+                            }
+                            
+                            
+                        }
                         .frame(width: 316, height: 54)
                         .background(Color.white)
                         .cornerRadius(12)
                         .shadow(color: .black.opacity(0.6), radius: 2, x: 0, y: 4)
+                        
+                        
+                        Text("OU")
+                            .padding(.top, 30)
+                        
+                        
+                        Button(action: {
+                            
+                        }, label: {
+                            Text("Crie uma Conta")
+                                .frame(width: 220, height: 44)
+                                .bold()
+                                .foregroundStyle(.white)
+                                .background(Color.verde)
+                                .cornerRadius(20)
+                                .padding(.top)
+                        })
+                    }
                     
                 }
-                
-                TextField("Entrar Com o Facebook", text: $EntrarComOFacebook)
-                    .frame(width: 316, height: 54)
-                    .background(Color.white)
-                    .cornerRadius(12)
-                    .shadow(color: .black.opacity(0.6), radius: 2, x: 0, y: 4)
-                
-                
-                
-                TextField("Entrar Com a Apple", text: $EntrarComAApple)
-                    .frame(width: 316, height: 54)
-                    .background(Color.white)
-                    .cornerRadius(12)
-                    .shadow(color: .black.opacity(0.6), radius: 2, x: 0, y: 4)
-                
-                
-                Text("OU")
-                    .padding(.top, 30)
-                
-                
-                VStack {
-                    Button(action: {
-                        //
-                    }, label: {
-                        Text("Crie Uma Conta")
-                            .frame(width: 240, height: 44)
-                            .foregroundColor(.white)
-                            .bold()
-                            .background(Color.verde)
-                            .cornerRadius(20)
-                            .padding(.top)
-                })
-               }
             }
+            
         }
     }
 }
-
 #Preview {
     LoginView()
 }
