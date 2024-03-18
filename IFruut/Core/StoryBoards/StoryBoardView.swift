@@ -9,7 +9,19 @@ import SwiftUI
 
 struct StoryBoardView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+             Spacer()
+        
+             Image(.logo)
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 187, height: 216)
+        
+        
+               Image(.image12)
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 687, height: 294)
     }
 }
 
