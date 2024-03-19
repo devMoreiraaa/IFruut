@@ -19,11 +19,11 @@ struct LoginView: View {
                     .scaledToFill()
                     .frame(width: 291, height: 282)
                 
-                 Text("ENTRE NA SUA CONTA")
+                Text("ENTRE NA SUA CONTA")
                     .font(.title)
                     .fontWeight(.semibold)
                 
-               
+                
                 HStack {
                     Button(action: {
                         //
@@ -38,7 +38,7 @@ struct LoginView: View {
                         Text("Entre Com o Facebook")
                             .foregroundStyle(.black)
                             .bold()
-                            
+                        
                     })
                     .frame(width: 300, height: 54)
                     .background(Color.white)
@@ -46,7 +46,7 @@ struct LoginView: View {
                     .bold()
                     .shadow(color: .black.opacity(0.6), radius: 0, x: 0, y: 3)
                 }
-               
+                
                 //Botão Entre com o Facebook
                 
                 HStack {
@@ -64,7 +64,7 @@ struct LoginView: View {
                             .foregroundStyle(.black)
                             .bold()
                             .padding(.trailing)
-                            
+                        
                     })
                     .frame(width: 300, height: 54)
                     .background(Color.white)
@@ -74,7 +74,7 @@ struct LoginView: View {
                 }
                 
                 //Botão Entre com o Google
-        
+                
                 HStack {
                     Button(action: {
                         
@@ -90,7 +90,7 @@ struct LoginView: View {
                             .foregroundStyle(.black)
                             .bold()
                             .padding(.trailing)
-                            
+                        
                     })
                     .frame(width: 300, height: 54)
                     .background(Color.white)
@@ -98,33 +98,33 @@ struct LoginView: View {
                     .bold()
                     .shadow(color: .black.opacity(0.6), radius: 0, x: 0, y: 3)
                 }
-                   //Botão entre com a Apple
+                //Botão entre com a Apple
                 
-                            Text("OU")
-                                .padding(.top, 30)
-                            
-                   //Botão Crie Sua Conta
+                Text("OU")
+                    .padding(.top, 30)
                 
-                            Button(action: {
-                                
-                            }, label: {
-                                NavigationLink {
-                                    RegisterView()
-                                } label: {
-                                    Text("Crie uma Conta")
-                                        .frame(width: 299, height: 44)
-                                        .bold()
-                                        .foregroundStyle(.white)
-                                        .background(Color.verde)
-                                        .cornerRadius(12)
-                                        .padding(.top)
-                                }
-
-                            })
+                //Botão Crie Sua Conta
+                
+                Button(action: {
+                    
+                }, label: {
+                    NavigationLink {
+                        RegisterView()
+                    } label: {
+                        Text("Crie uma Conta")
+                            .frame(width: 299, height: 44)
+                            .bold()
+                            .foregroundStyle(.white)
+                            .background(Color.verde)
+                            .cornerRadius(12)
+                            .padding(.top)
+                    }
+                    
+                })
             }
         }
-                }
-            }
+    }
+}
 #Preview {
     LoginView()
 }

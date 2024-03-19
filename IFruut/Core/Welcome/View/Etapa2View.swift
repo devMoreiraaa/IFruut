@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct Etapa2View: View {
+    
+    var page: Page
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+       
+            VStack(spacing: 20){
+               
+                Image(page.imageURL)
+                    .resizable()
+                    .frame(width: 200, height: 200)
+                    
+                    
+                
+                Text(page.nome)
+                    .font(.title)
+                    .bold()
+                
+                Text(page.description)
+                    .font(.subheadline)
+                    .frame(width: 300)
+                    .multilineTextAlignment(.center)
+        }
     }
 }
 
 #Preview {
-    Etapa2View()
+    Etapa2View(page: Page.samplePage)
 }

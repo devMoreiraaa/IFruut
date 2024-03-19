@@ -47,16 +47,16 @@ struct Etapa1View: View {
                     Button(action: {
                         
                     }, label: {
-                        Text("Iniciar ")
-                            .frame(width: 230, height: 40)
-                            .bold()
-                            .background(Color.verde)
-                            .foregroundStyle(.white)
-                            .cornerRadius(12)
-                            
-                        
-                            
-                            
+                        NavigationLink {
+                           PageView()
+                        } label: {
+                            Text("Iniciar ")
+                                .frame(width: 230, height: 40)
+                                .bold()
+                                .background(Color.verde)
+                                .foregroundStyle(.white)
+                                .cornerRadius(12)
+                        }
                 })
                     .foregroundStyle(.verde)
                     .background(Color.white)

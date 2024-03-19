@@ -21,12 +21,12 @@ struct RegisterView: View {
                 Image(.group87)
                     .resizable()
                     .scaledToFill()
-                .frame(width: 277, height: 198)
+                    .frame(width: 277, height: 198)
                 
                 Text("Faça Seu Cadastro")
                     .font(.title)
                     .padding(.top)
-            
+                
                 HStack {
                     // PARA ESCREVER SEU NOME
                     Image(systemName: "person.fill")
@@ -36,7 +36,7 @@ struct RegisterView: View {
                     TextField("Nome", text: $nome)
                         .bold()
                         .padding()
-                        
+                    
                 }
                 .frame(width: 300, height: 50)
                 .background(Color.white)
@@ -54,7 +54,7 @@ struct RegisterView: View {
                     TextField("Email", text: $email)
                         .bold()
                         .padding()
-                        
+                    
                 }
                 .frame(width: 300, height: 50)
                 .background(Color.white)
@@ -72,7 +72,7 @@ struct RegisterView: View {
                     TextField("Senha", text: $senha)
                         .bold()
                         .padding()
-                        
+                    
                 }
                 .frame(width: 300, height: 50)
                 .background(Color.white)
@@ -113,7 +113,7 @@ struct RegisterView: View {
                             .cornerRadius(12)
                             .padding(.top)
                     }
-
+                    
                 })
             }
         }
