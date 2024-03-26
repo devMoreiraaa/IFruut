@@ -11,27 +11,28 @@ struct TabBarView: View {
     var body: some View {
      
         TabView {
-            Text("ola")
             
+            HomeView()
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home")
             }
             
-            Text("segunda view")
+            SearchView()
             
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Home")
             }
-            Text("ola")
+            
+            CartView()
             
                 .tabItem {
                     Image(systemName: "cart")
                     Text("Carrinha")
             }
             
-            Text("ola")
+           PersonView()
             
                 .tabItem {
                     Image(systemName: "person.fill")
