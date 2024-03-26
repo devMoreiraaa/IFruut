@@ -11,6 +11,7 @@
 		8E52F8D12BA8C9C300092D93 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E52F8D02BA8C9C300092D93 /* Page.swift */; };
 		8E52F8D32BA8D11400092D93 /* Etapa2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E52F8D22BA8D11400092D93 /* Etapa2View.swift */; };
 		8E52F8D52BA9382100092D93 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E52F8D42BA9382100092D93 /* PageView.swift */; };
+		8E52F8DA2BB33DE200092D93 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E52F8D92BB33DE200092D93 /* TabBarView.swift */; };
 		8ECCD9E92BA7D8AD005C857C /* IFruutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCD9E82BA7D8AD005C857C /* IFruutApp.swift */; };
 		8ECCD9EB2BA7D8AD005C857C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCD9EA2BA7D8AD005C857C /* ContentView.swift */; };
 		8ECCD9ED2BA7D8AF005C857C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ECCD9EC2BA7D8AF005C857C /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		8E52F8D02BA8C9C300092D93 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		8E52F8D22BA8D11400092D93 /* Etapa2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Etapa2View.swift; sourceTree = "<group>"; };
 		8E52F8D42BA9382100092D93 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		8E52F8D92BB33DE200092D93 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		8ECCD9E52BA7D8AD005C857C /* IFruut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IFruut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECCD9E82BA7D8AD005C857C /* IFruutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFruutApp.swift; sourceTree = "<group>"; };
 		8ECCD9EA2BA7D8AD005C857C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E52F8D62BB33D5700092D93 /* perfil */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = perfil;
+			sourceTree = "<group>";
+		};
+		8E52F8D72BB33D6E00092D93 /* Carrinho */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Carrinho;
+			sourceTree = "<group>";
+		};
+		8E52F8D82BB33D7F00092D93 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		8ECCD9DC2BA7D8AD005C857C = {
 			isa = PBXGroup;
 			children = (
@@ -127,8 +150,6 @@
 				8ECCDA092BA7DBF9005C857C /* StoryBoards */,
 				8ECCDA042BA7DAB5005C857C /* Account */,
 				8ECCDA032BA7DAB3005C857C /* TabBar */,
-				8ECCDA022BA7DAB1005C857C /* Home */,
-				8ECCDA012BA7DAAF005C857C /* Menu */,
 				8ECCDA002BA7DAAC005C857C /* Welcome */,
 				8ECCD9FF2BA7DAA4005C857C /* Authentication */,
 				8ECCD9FE2BA7DAA2005C857C /* ViewModel */,
@@ -171,11 +192,12 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
-		8ECCDA012BA7DAAF005C857C /* Menu */ = {
+		8ECCDA012BA7DAAF005C857C /* TabBarPrincipal */ = {
 			isa = PBXGroup;
 			children = (
+				8E52F8D92BB33DE200092D93 /* TabBarView.swift */,
 			);
-			path = Menu;
+			path = TabBarPrincipal;
 			sourceTree = "<group>";
 		};
 		8ECCDA022BA7DAB1005C857C /* Home */ = {
@@ -188,6 +210,11 @@
 		8ECCDA032BA7DAB3005C857C /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				8ECCDA022BA7DAB1005C857C /* Home */,
+				8E52F8D82BB33D7F00092D93 /* Search */,
+				8E52F8D72BB33D6E00092D93 /* Carrinho */,
+				8E52F8D62BB33D5700092D93 /* perfil */,
+				8ECCDA012BA7DAAF005C857C /* TabBarPrincipal */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -326,6 +353,7 @@
 				8ECCDA0F2BA7DE10005C857C /* LoginView.swift in Sources */,
 				8E52F8CF2BA8BA8F00092D93 /* Etapa1View.swift in Sources */,
 				8E52F8D52BA9382100092D93 /* PageView.swift in Sources */,
+				8E52F8DA2BB33DE200092D93 /* TabBarView.swift in Sources */,
 				8ECCDA0B2BA7DC59005C857C /* StoryBoardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
