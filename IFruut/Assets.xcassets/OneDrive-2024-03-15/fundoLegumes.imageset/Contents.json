@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "fundo-desfocado-de-frutas-e-legumes-dispostos-nas-prateleiras-dos-supermercados_91128-3451.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
