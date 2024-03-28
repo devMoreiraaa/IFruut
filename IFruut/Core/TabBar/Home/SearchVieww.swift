@@ -7,17 +7,12 @@
 
 import SwiftUI
 
-struct SearchView: View {
-    @State private var  SearchTerm = ""
+struct SearchVieww: View {
     var body: some View {
-        
-        NavigationStack {
-            
-        }
-        .searchable(text: $SearchTerm, prompt: "Search Follow")
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    SearchView()
+    SearchVieww()
 }
