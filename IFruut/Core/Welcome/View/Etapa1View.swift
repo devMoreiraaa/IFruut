@@ -17,10 +17,10 @@ struct Etapa1View: View {
                 
             VStack(alignment: .leading, spacing: 14) {
                 
-                Image(.logo)
+                Image(.image11)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 75, height: 75)
+                    .frame(width: 105, height: 65)
                     .cornerRadius(40)
                 
                 Text("Seja Bem - Vindo ao aplicativo")

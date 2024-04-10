@@ -8,119 +8,92 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @State private var Email: String = ""
+    @State private var Senha: String = ""
+    
     var body: some View {
         
+
         NavigationStack {
-            VStack(alignment:.center){
-                //Imagem Principal do Login
-                
-                Image(.telalogin)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 291, height: 282)
-                
-                Text("ENTRE NA SUA CONTA")
-                    .font(.title)
-                    .fontWeight(.semibold)
-                
-                
-                HStack {
-                    Button(action: {
-                        //
-                    }, label: {
-                        
-                        Image(.color)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 20)
-                            .padding(.trailing)
-                        
-                        Text("Entre Com o Facebook")
-                            .foregroundStyle(.black)
-                            .bold()
-                        
-                    })
-                    .frame(width: 300, height: 54)
-                    .background(Color.white)
-                    .cornerRadius(12)
-                    .bold()
-                    .shadow(color: .black.opacity(0.6), radius: 0, x: 0, y: 3)
-                }
-                
-                //Botão Entre com o Facebook
-                
-                HStack {
-                    Button(action: {
-                        //
-                    }, label: {
-                        
-                        Image(.color1)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 50)
-                            .padding(.trailing)
-                        
-                        Text("Entre Com o Google")
-                            .foregroundStyle(.black)
-                            .bold()
-                            .padding(.trailing)
-                        
-                    })
-                    .frame(width: 300, height: 54)
-                    .background(Color.white)
-                    .cornerRadius(12)
-                    .bold()
-                    .shadow(color: .black.opacity(0.6), radius: 0, x: 0, y: 3)
-                }
-                
-                //Botão Entre com o Google
-                
-                HStack {
-                    Button(action: {
-                        
-                    }, label: {
-                        
-                        Image(.apple)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 20, height: 20)
-                            .padding(.trailing)
-                        
-                        Text("Entre Com a Apple")
-                            .foregroundStyle(.black)
-                            .bold()
-                            .padding(.trailing)
-                        
-                    })
-                    .frame(width: 300, height: 54)
-                    .background(Color.white)
-                    .cornerRadius(12)
-                    .bold()
-                    .shadow(color: .black.opacity(0.6), radius: 0, x: 0, y: 3)
-                }
-                //Botão entre com a Apple
-                
-                Text("OU")
-                    .padding(.top, 30)
-                
-                //Botão Crie Sua Conta
-                
-                Button(action: {
+            ZStack {
+                    Image(.image40)
+                        .resizable()
+                        .scaledToFill()
+                        .ignoresSafeArea()
+                        .frame(width: 390, height: 890)
                     
-                }, label: {
-                    NavigationLink {
-                        RegisterView()
-                    } label: {
-                        Text("Crie uma Conta")
-                            .frame(width: 299, height: 44)
-                            .bold()
+                    VStack {
+                       
+                        Image(.image11)
+                            .padding(.top, 260)
+                            .padding(.trailing, 100)
+                        
+                        VStack(alignment: .leading){
+                            Text("Login")
+                                .font(.title)
+                                .padding(.leading)
+                            
+                            
+                            HStack {
+                                Image(systemName: "mail")
+                                    .foregroundStyle(.gray)
+                                    .padding(.leading)
+                                    
+                                
+                                TextField("Email", text: $Email)
+                                    .padding(.leading)
+                            }
+                            .frame(width: 300, height: 50)
+                            .background(Color.white)
+                            .cornerRadius(12)
+                            .padding()
+                            .shadow(color: .black,radius: 10, x: 5, y: 7)
+
+                            
+                            HStack {
+                                Image(systemName: "lock")
+                                    .foregroundStyle(.gray)
+                                    .padding(.leading)
+                                    
+                                
+                                SecureField("Senha", text: $Senha)
+                                    .padding(.leading)
+                            }
+                            .frame(width: 300, height: 50)
+                            .background(Color.white)
+                            .cornerRadius(12)
+                            .padding()
+                            .shadow(color: .black,radius: 10, x: 5, y: 7)
+                        }
+                        .padding(.horizontal, 50)
+                        
+                        VStack {
+                            Text("Esqueceu a senha ?")
+                                .font(.footnote)
+                            .frame(width: 200)
+                            .padding(.top)
+                            
+                            
+                            Button(action: {
+                                
+                            }, label: {
+                                Text("Fazer o Login")
+                            })
+                            .frame(width: 320, height: 60)
                             .foregroundStyle(.white)
                             .background(Color.verde)
-                            .cornerRadius(12)
+                            .cornerRadius(30)
                             .padding(.top)
-                    }
-                    
-                })
+                            .padding(.bottom)
+                            
+                           Text("Não é Cadastrado?")
+                            +
+                            Text("   Cadastra-se")
+                                .foregroundStyle(.verde)
+                               
+                        }
+                }
             }
         }
     }

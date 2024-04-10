@@ -12,13 +12,13 @@ struct StoryBoardView: View {
         
              Spacer()
         
-             Image(.logo)
+        Image(.imagem20240328140709098RemovebgPreview1)
             .resizable()
             .aspectRatio(contentMode: .fill)
             .frame(width: 187, height: 216)
         
         
-        Image(.image18)
+        Image(.image11)
             .resizable()
             .aspectRatio(contentMode: .fill)
             .frame(width: 687, height: 294)

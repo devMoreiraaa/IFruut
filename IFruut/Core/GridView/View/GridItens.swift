@@ -16,7 +16,7 @@ struct GridItens: View {
                 .frame(width: 190, height: 200)
             
             VStack( spacing: 2) {
-                Image(.image19)
+                Image(.image11)
                     .resizable()
                 .frame(width: 80, height: 80)
                 
