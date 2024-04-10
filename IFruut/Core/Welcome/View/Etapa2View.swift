@@ -14,22 +14,29 @@ struct Etapa2View: View {
     var body: some View {
         
        
+        ZStack {
+            Color.green
+                .ignoresSafeArea()
+            
+            
             VStack(spacing: 20){
-               
-                Image(page.imageURL)
-                    .resizable()
-                    .frame(width: 200, height: 200)
+                   
+                    Image(page.imageURL)
+                        .resizable()
+                        .frame(width: 350, height: 350)
+                        .cornerRadius(150)
+                        
+                        
                     
+                    Text(page.nome)
+                        .font(.title)
+                        .bold()
                     
-                
-                Text(page.nome)
-                    .font(.title)
-                    .bold()
-                
-                Text(page.description)
-                    .font(.subheadline)
-                    .frame(width: 300)
-                    .multilineTextAlignment(.center)
+                    Text(page.description)
+                        .font(.subheadline)
+                        .frame(width: 300)
+                        .multilineTextAlignment(.center)
+            }
         }
     }
 }

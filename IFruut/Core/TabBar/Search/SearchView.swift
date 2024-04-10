@@ -83,7 +83,7 @@ struct SearchView: View {
             }
            .padding(.top)
            .navigationTitle("Categorias")
-           .navigationBarTitleDisplayMode(.automatic)
+           .navigationBarTitleDisplayMode(.inline)
         }
         .searchable(text: $SearchTerm, prompt: "Pesquisar")
 

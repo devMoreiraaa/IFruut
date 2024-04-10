@@ -18,7 +18,7 @@ struct StoryBoardView: View {
             .frame(width: 187, height: 216)
         
         
-               Image(.image12)
+        Image(.image18)
             .resizable()
             .aspectRatio(contentMode: .fill)
             .frame(width: 687, height: 294)
